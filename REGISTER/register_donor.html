@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body>
+    <div class="p-0 m-0 h-screen bg-gray-300" id="BODY">
+        <!-- HEADER -->
+        <div class="h-20 w-auto bg-indigo-950 border flex items-center justify-between" id="UPPER-LANDING-HEADER">
+            <div class="p-2 ml-5 flex-wrap items-center  gap-3 flex" id="LOGO&TEXT">
+                <image src="/IMAGES/logo_white.png" alt="logo_white" class="h-15 w-15 flex-wrap">
+                    <h1 class="text-3xl text-white bold">SDDMS</h1>
+            </div>
+            <div class="mr-3 flex " id="UPPER-LANDING-NAV">
+                <h1 class="mr-10 font-bold text-xl  text-white">ABOUT US</h1>
+                <H1 class="font-bold text-xl text-white">CONTACT</H1>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="border-2 lg:h-screen p-2 items-center justify-center-safe flex lg:w-auto bg-[url(../IMAGES/BUKSU.jpg)] bg-cover background-size: cover background-position: center" id="CONTENT-REGISTER-MAIN">
+            <div class="bg-white rounded-xl shadow-lg p-8 max-w-md lg:w-120 w-full h-200 flex-wrap" id="register-form">
+                <img src="/IMAGES/logo_blue.png" alt="logo" class="size-10">
+                <div class="text-center">
+                    <h2 class="text-2xl font-semibold text-gray-800">DONOR REGISTRATION</h2>
+                </div>
+                <form class="mt-8">
+                    <div class="mb-4 flex gap-2">
+                        <div id="firstname">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="fullname">
+                                Firstname
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded lg:w-45 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="fullname" type="text" placeholder="Enter your firstname">
+                        </div>
+                        <div id="lastname">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="fullname">
+                                Lastname
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded lg:w-45 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="fullname" type="text" placeholder="Enter your lastname">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                            Email Address
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded lg:w-92 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                            Password
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded lg:w-92 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="password" type="password" placeholder="Create a password">
+                    </div>
+                    <div class="mb-2">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                            Confirm Password
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded lg:w-92 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="password" type="password" placeholder="Confirm password">
+                
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-2 text-gray-700">I agree to Terms & Condition</span>
+                        </label>
+                
+                    </div>
+                    <div class="mb-6 mt-6  justify-items-center-safe">
+                        <div class="flex items-center lg:w-95 bg-gray-300 p-4 rounded-md">
+                            <input type="checkbox"
+                                class="form-checkbox size-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500">
+                            <span class="ml-2 text-gray-700 text-sm">I'm not a robot</span>
+                        </div>
+                    </div>
+                </form>
+                    <div id="createACC" class="bg-indigo-950 p-5 lg:w-95 text-white rounded-2xl justify-center-safe flex mb-4 font-bold">
+                        <h1>CREATE ACCOUNT</h1>
+                    </div>
+                    <div id="createACC" class="bg-white p-5 lg:w-95 text-indigo-950 rounded-2xl justify-center-safe flex border-2 border-indigo-950 font-bold">
+                        <h1>LOGIN IN WITH GOOGLE</h1>
+                    </div>
+                    <a href="#" class="flex lg:w-95 justify-center-safe mt-4 text-sm font-medium text-indigo-950 hover:text-indigo-700">
+                        <button>
+                            Already have an account? Login  
+                        </button>
+                    </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

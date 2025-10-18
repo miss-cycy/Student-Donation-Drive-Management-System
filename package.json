@@ -1,7 +1,7 @@
 {
   "name": "collab-system",
   "version": "1.0.0",
-  "main": "landing.html, ../REGISTER/register_SA.html, ../REGISTER/registration_donor.html, ../REGISTER/registration_admin.html",
+  "main": "landing.html, ../LOGIN/register_SA.html, ../LOGIN/login_donor.html, ../LOGIN/login_admin.html, ../REGISTER/register_donor.html, ../REGISTER/register_admin.html, ../DASHBOARD/admin_dashboard.html, ../DASHBOARD/donor_dashboard.html, ../DASHBOARD/sa_dashboard.html, ../ABOUT/about.html, ../CONTACT/contact.html, ../SERVICES/services.html, ../FAQ/faq.html, ../PROFILE/profile_admin.html, ../PROFILE/profile_donor.html, ../PROFILE/profile_sa.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
