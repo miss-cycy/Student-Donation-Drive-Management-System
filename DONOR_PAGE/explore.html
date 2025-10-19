@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore donation</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body class="p-0 m-0">
+    <aside class=" sm:w-50 lg:w-100 w-auto lg:h-315 bg-indigo-950 flex-wrap  place-items-center-safe float-left ">
+        <section class="lg:size-70 p-2 flex-wrap justify-items-center-safe content-center text-center mt- 5">
+            <img src="../IMAGES/logo_white.png" alt="Logo" class="lg:size-30">
+            <h1 class="text-white text-2xl">Student Donation Drive Managment System</h1>
+        </section>
+        <section>
+            <div class="flex items-center bg-gray-600 rounded-4xl lg:w-70 lg:h-20">
+                <div class="lg:size-25 bg-white rounded-full mr-2 overflow-visible"></div>
+                <span class="text-white text-xl">Stephanie E.</span>
+            </div>
+        </section>
+        <div class=" my-10 flex place-content-center items-center-safe gap-2">
+            <h1 class="text-white lg:text-3xl font-bold">DONOR </h1><hr class="border-2 border-white lg:w-50">
+        </div>
+        <nav>
+            <ul class="text-white text-md">
+                <a href="../DONOR_PAGE/dashboard.html">
+                    <li class="p-4 lg:w-60 flex items-center gap-3 hover:bg-amber-300 rounded-2xl hover:text-indigo-950">
+                        <img src="/IMAGES/logo_white.png" alt="" class="lg:size-7">
+                        DASHBOARD
+                    </li>
+                </a>
+                
+                <li class="my-1 p-4 lg:w-60 flex items-center gap-3  bg-gray-700 rounded-lg border-2">
+                    <img src="/IMAGES/logo_white.png" alt="" class="lg:size-7">
+                    <a href="#">EXPLORE CAMPAIGNS</a>
+                </li>
+                <li class="p-4 lg:w-60 flex items-center gap-3">
+                    <img src="/IMAGES/logo_white.png" alt="" class="lg:size-7">
+                    <a href="#">MY DONATIONS</a>
+                </li>   
+            </ul>
+        </nav>
+    </aside>
+    <main class="">
+        <section class="lg:ml-100 lg:pl-10 lg:p-5 pl-5 border-b-2 border-indigo-950 flex items-center-safe justify-between">
+            <h1 class="text-3xl font-bold text-indigo-950">Explore Campaigns</h1>
+            <div class="flex gap-2 mx-5">
+                <div class="flex border-2 lg:w-15 p-2 bg-indigo-950 rounded-2xl items-center-safe">
+                    <div class="lg:size-10 flex-wrap place-content-center-safe rounded-2xl">
+                        <img src="../IMAGES/logo_white.png" alt="notification_bell" class="lg:size-10   ">
+                    </div>
+                </div>
+                <a href="../LOGIN/login_donor.html" >
+                    <div class="flex border-2 lg:w-40 p-2 items-center-safe space-x-3 bg-orange-400 font-bold hover:bg-indigo-950 hover:text-white text-white rounded-2xl">
+                        <div class="lg:size-10 border-2 rounded-4xl bg-white"></div>
+                        <h1 class="text-2xl">logout</h1>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+        <section class="flex place-content-center-safe items-center-safe justify-between">
+            <div class="flex lg:pl-10 lg:p-5">
+                <form class="lg:w-md lg:h-20 place-content-center-safe">
+                    <div class="flex items-center-safe border-2 lg:w-150 lg:h-15 rounded-md place-content-center-safe justify-between">
+                        <img src="../IMAGES/logo_blue.png" alt="" class="lg:size-15">
+                        <input type="search" id="Default-search" class="lg:w-140 lg:h-10 rounded-2xl px-2 text-xl mr-2" placeholder="Search campaign or keywords..."> 
+                    </div>
+                </form>
+            </div>
+            <div class="flex lg:pr-10 lg:p-5">
+                    <button id="dropdownButton" class=" text-indigo-950 border-2 px-4 py-2 rounded-md lg:w-100 lg:h-15 hover:bg-blue-300 focus:outline-none flex items-center-safe justify-between" >
+                        <div class="flex items-center-safe">
+                            <img src="../IMAGES/logo_blue.png" alt="" class="lg:size-10">
+                            <label for="Options">Options</label>
+                        </div>
+                        
+                        <label for="Arrow" class="items-center-safe lg:mr-2"> ▼ </label>
+                    </button>
+                    <div id="dropdownMenu" class="hidden absolute mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a>
+                    </div>
+            </div>
+            <div class="flex lg:pr-10 lg:p-5">
+                    <button id="dropdownButton" class=" text-indigo-950 border-2 px-4 py-2 rounded-md lg:w-100 lg:h-15 hover:bg-blue-300 focus:outline-none flex items-center-safe justify-between" >
+                        <label for="Options">Newest First</label>
+                        <label for="Arrow" class="items-center-safe lg:mr-2"> ▼ </label>
+                    </button>
+                    <div id="dropdownMenu" class="hidden absolute mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Oldest</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">I don't know</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">What to do?</a>
+                    </div>
+            </div>
+        </section>
+        <section class="flex flex-wrap" id="CAMPAIGNS">
+            <div class="flex justify-between lg:w-screen px-5">
+                <div class=" p-3 lg:w-100 place-content-center-safe flex text-2xl font-bold text-indigo-950">
+                    <label for="Active">Active Donation Campaigns</label>
+                </div>
+                <div class=" p-3 lg:w-100 place-content-center-safe flex text-2xl font-bold text-indigo-950">
+                    <label for="Active">Showing 6 of 6 campaigns</label>
+                </div>
+            </div>
+            <div class="p-5 grid-cols-3 grid overflow-y-auto scroll-smooth lg:h-[75vh] lg:w-full place-content-center-safe">
+                <div>
+                    <div class="shadow-xl/25 lg:h-195 rounded-2xl m-5">
+                        <img src="../IMAGES/help.png" alt="" class="">
+                        <div class="px-5 my-5">
+                            <h1 class="text-3xl font-bold text-indigo-950">Emergency Food Pantry Support</h1>
+                            <p class="py-2">by Sara Johnson</p>
+                        </div>
+                        <div class="px-5 my-5">
+                            <h1 class="text-xl lg:w-120 text-indigo-950">Supporting our campus food pantry to help students facing food insecurity during their studies.</h1>
+                        </div>
+                        <div class="px-5 my-5 flex-col flex">
+                            <label for="Date" class="py-5">Deadline: 11-25-2025</label>
+                            <label for="Date">Deadline: 11-25-2025</label>
+                        </div>
+                        <div class="flex place-content-center-safe items-center-safe">
+                            <a href="">
+                                <button class="px-10 py-3 my-5 mx-2.5 border-2 text-2xl font-bold text-white flex flex-wrap items-center-safe bg-orange-500 rounded-xl">
+                                <img src="../IMAGES/logo_white.png" alt="" class="lg:size-10 mr-5 overflow-visible">                                    
+                                    Donate Now
+                                </button>
+                            </a>
+                            <a href="">
+                                <button class="px-10 py-4 my-5 ms-2.5 border-2 text-xl border-indigo-950 rounded-2xl font-bold text-indigo-950">View More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="shadow-xl/25 lg:h-195 rounded-2xl m-5">
+                        <img src="../IMAGES/help.png" alt="" class="">
+                        <div class="px-5 my-5">
+                            <h1 class="text-3xl font-bold text-indigo-950">Emergency Food Pantry Support</h1>
+                            <p class="py-2">by Sara Johnson</p>
+                        </div>
+                        <div class="px-5 my-5">
+                            <h1 class="text-xl lg:w-120 text-indigo-950">Supporting our campus food pantry to help students facing food insecurity during their studies.</h1>
+                        </div>
+                        <div class="px-5 my-5 flex-col flex">
+                            <label for="Date" class="py-5">Deadline: 11-25-2025</label>
+                            <label for="Date">Deadline: 11-25-2025</label>
+                        </div>
+                        <div class="flex place-content-center-safe items-center-safe">
+                            <a href="">
+                                <button class="px-10 py-3 my-5 mx-2.5 border-2 text-2xl font-bold text-white flex flex-wrap items-center-safe bg-orange-500 rounded-xl">
+                                <img src="../IMAGES/logo_white.png" alt="" class="lg:size-10 mr-5 overflow-visible">                                    
+                                    Donate Now
+                                </button>
+                            </a>
+                            <a href="">
+                                <button class="px-10 py-4 my-5 ms-2.5 border-2 text-xl border-indigo-950 rounded-2xl font-bold text-indigo-950">View More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="shadow-xl/25 lg:h-195 rounded-2xl m-5">
+                        <img src="../IMAGES/help.png" alt="" class="">
+                        <div class="px-5 my-5">
+                            <h1 class="text-3xl font-bold text-indigo-950">Emergency Food Pantry Support</h1>
+                            <p class="py-2">by Sara Johnson</p>
+                        </div>
+                        <div class="px-5 my-5">
+                            <h1 class="text-xl lg:w-120 text-indigo-950">Supporting our campus food pantry to help students facing food insecurity during their studies.</h1>
+                        </div>
+                        <div class="px-5 my-5 flex-col flex">
+                            <label for="Date" class="py-5">Deadline: 11-25-2025</label>
+                            <label for="Date">Deadline: 11-25-2025</label>
+                        </div>
+                        <div class="flex place-content-center-safe items-center-safe">
+                            <a href="">
+                                <button class="px-10 py-3 my-5 mx-2.5 border-2 text-2xl font-bold text-white flex flex-wrap items-center-safe bg-orange-500 rounded-xl">
+                                <img src="../IMAGES/logo_white.png" alt="" class="lg:size-10 mr-5 overflow-visible">                                    
+                                    Donate Now
+                                </button>
+                            </a>
+                            <a href="">
+                                <button class="px-10 py-4 my-5 ms-2.5 border-2 text-xl border-indigo-950 rounded-2xl font-bold text-indigo-950">View More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="shadow-xl/25 lg:h-195 rounded-2xl m-5">
+                        <img src="../IMAGES/help.png" alt="" class="">
+                        <div class="px-5 my-5">
+                            <h1 class="text-3xl font-bold text-indigo-950">Emergency Food Pantry Support</h1>
+                            <p class="py-2">by Sara Johnson</p>
+                        </div>
+                        <div class="px-5 my-5">
+                            <h1 class="text-xl lg:w-120 text-indigo-950">Supporting our campus food pantry to help students facing food insecurity during their studies.</h1>
+                        </div>
+                        <div class="px-5 my-5 flex-col flex">
+                            <label for="Date" class="py-5">Deadline: 11-25-2025</label>
+                            <label for="Date">Deadline: 11-25-2025</label>
+                        </div>
+                        <div class="flex place-content-center-safe items-center-safe">
+                            <a href="">
+                                <button class="px-10 py-3 my-5 mx-2.5 border-2 text-2xl font-bold text-white flex flex-wrap items-center-safe bg-orange-500 rounded-xl">
+                                <img src="../IMAGES/logo_white.png" alt="" class="lg:size-10 mr-5 overflow-visible">                                    
+                                    Donate Now
+                                </button>
+                            </a>
+                            <a href="">
+                                <button class="px-10 py-4 my-5 ms-2.5 border-2 text-xl border-indigo-950 rounded-2xl font-bold text-indigo-950">View More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="shadow-xl/25 lg:h-195 rounded-2xl m-5">
+                        <img src="../IMAGES/help.png" alt="" class="">
+                        <div class="px-5 my-5">
+                            <h1 class="text-3xl font-bold text-indigo-950">Emergency Food Pantry Support</h1>
+                            <p class="py-2">by Sara Johnson</p>
+                        </div>
+                        <div class="px-5 my-5">
+                            <h1 class="text-xl lg:w-120 text-indigo-950">Supporting our campus food pantry to help students facing food insecurity during their studies.</h1>
+                        </div>
+                        <div class="px-5 my-5 flex-col flex">
+                            <label for="Date" class="py-5">Deadline: 11-25-2025</label>
+                            <label for="Date">Deadline: 11-25-2025</label>
+                        </div>
+                        <div class="flex place-content-center-safe items-center-safe">
+                            <a href="">
+                                <button class="px-10 py-3 my-5 mx-2.5 border-2 text-2xl font-bold text-white flex flex-wrap items-center-safe bg-orange-500 rounded-xl">
+                                <img src="../IMAGES/logo_white.png" alt="" class="lg:size-10 mr-5 overflow-visible">                                    
+                                    Donate Now
+                                </button>
+                            </a>
+                            <a href="">
+                                <button class="px-10 py-4 my-5 ms-2.5 border-2 text-xl border-indigo-950 rounded-2xl font-bold text-indigo-950">View More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="shadow-xl/25 lg:h-195 rounded-2xl m-5">
+                        <img src="../IMAGES/help.png" alt="" class="">
+                        <div class="px-5 my-5">
+                            <h1 class="text-3xl font-bold text-indigo-950">Emergency Food Pantry Support</h1>
+                            <p class="py-2">by Sara Johnson</p>
+                        </div>
+                        <div class="px-5 my-5">
+                            <h1 class="text-xl lg:w-120 text-indigo-950">Supporting our campus food pantry to help students facing food insecurity during their studies.</h1>
+                        </div>
+                        <div class="px-5 my-5 flex-col flex">
+                            <label for="Date" class="py-5">Deadline: 11-25-2025</label>
+                            <label for="Date">Deadline: 11-25-2025</label>
+                        </div>
+                        <div class="flex place-content-center-safe items-center-safe">
+                            <a href="">
+                                <button class="px-10 py-3 my-5 mx-2.5 border-2 text-2xl font-bold text-white flex flex-wrap items-center-safe bg-orange-500 rounded-xl">
+                                <img src="../IMAGES/logo_white.png" alt="" class="lg:size-10 mr-5 overflow-visible">                                    
+                                    Donate Now
+                                </button>
+                            </a>
+                            <a href="">
+                                <button class="px-10 py-4 my-5 ms-2.5 border-2 text-xl border-indigo-950 rounded-2xl font-bold text-indigo-950">View More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+</body>
+</html>
