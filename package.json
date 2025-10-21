@@ -1,18 +1,35 @@
 {
-  "name": "collab-system",
-  "version": "1.0.0",
-  "main": "app.js, ../src/landing.html, ../LOGIN/register_SA.html, ../LOGIN/login_donor.html, ../LOGIN/login_admin.html, ../REGISTER/register_donor.html, ../RESET_PA/SA_reset.html, ../PAGED/admin_dashboard.html, ../PAGED/donor_dashboard.html",
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.14",
-    "express": "^5.1.0",
+    "@react-oauth/google": "^0.12.2",
+    "@tailwindcss/vite": "^4.1.14",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
-    "tw-elements": "^2.0.0"
+    "vite": "^7.1.7"
   }
 }
