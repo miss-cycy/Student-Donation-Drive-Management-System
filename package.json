@@ -1,14 +1,9 @@
 {
-<<<<<<< HEAD
   "name": "collab-system",
   "version": "1.0.0",
   "main": "app.js, ../src/landing.html, ../LOGIN/register_SA.html, ../LOGIN/login_donor.html, ../LOGIN/login_admin.html, ../REGISTER/register_donor.html, ../RESET_PA/SA_reset.html, ../PAGED/dashboard.html , ../PAGED/myDonations.html",
-=======
-  "name": "client",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
->>>>>>> 66bbed01fb38dc2bde74a98abafd5356281431f6
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -36,6 +31,6 @@
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
-    "vite": "^7.1.7"
+    "vite": "^7.1.12"
   }
 }
