@@ -1,15 +1,13 @@
 {
   "name": "collab-system",
   "version": "1.0.0",
-  "main": "app.js, ../src/landing.html, ../LOGIN/register_SA.html, ../LOGIN/login_donor.html, ../LOGIN/login_admin.html, ../REGISTER/register_donor.html, ../RESET_PA/SA_reset.html, ../PAGED/dashboard.html , ../PAGED/myDonations.html",
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@react-oauth/google": "^0.12.2",
