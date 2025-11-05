@@ -10,7 +10,7 @@ const landing = () => {
             id="LOGO&TEXT"
           >
             <img
-              src="/IMAGES/logo_white.png"
+              src="../IMAGES/logo_white.png"
               alt="logo_white"
               className="h-15 w-15 flex-wrap"
             />
@@ -60,6 +60,7 @@ const landing = () => {
                   className=" p-2 m-2 w-200"
                   id="UPPER-LANDING-CONTENTS-CONTAINER-MAIN-CONTENT-EXPLORE"
                 >
+                  
                   <button className="p-2 rounded-2xl bg-white lg:w-50 text-black shadow-xl/30">
                     EXPLORE CAMPAIGNS
                   </button>
